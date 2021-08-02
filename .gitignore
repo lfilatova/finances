@@ -1,0 +1,4 @@
+.idea
+resources/public/cljs-out
+target
+finances.iml
