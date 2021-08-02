@@ -2,6 +2,9 @@
 
 Mini finances app for personal accounting
 
+![image](https://user-images.githubusercontent.com/73614641/127908304-5f5fb279-678f-4884-a4e4-c003f425fd6a.png)
+
+
 ## Development
 
 To get an interactive development environment run:
