@@ -1,6 +1,8 @@
 # finances
 
-Mini finances app for personal accounting
+Mini finances app for personal accounting.
+
+[Live Demo](https://replit.com/@lfilatova/finances#index.html)
 
 ![image](https://user-images.githubusercontent.com/73614641/127908304-5f5fb279-678f-4884-a4e4-c003f425fd6a.png)
 
