@@ -12,9 +12,9 @@
   (group-by #(tick/month (:date %)) transactions))
 
 (defn transactions->months [transactions]
-  (let [month->transactions (group-by-month transactions)
-        months              (keys month->transactions)]
-    months))
+  (->> transactions
+       group-by-month
+       keys))
 
 (defn- calculate-sum [transactions]
   (reduce (fn [sum transaction] (+ sum (:amount transaction)))

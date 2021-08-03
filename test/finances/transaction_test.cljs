@@ -64,7 +64,6 @@
 
 (deftest calculate-sum-for-month
   (testing "Get transaction sum for month"
-    (tick/with-clock #inst"2021-08-01"
       (is (= 300
              (transaction/calculate-sum-for-month [{:date      (tick/date "2021-07-01")
                                                     :recipient "Recipient 1"
@@ -75,4 +74,4 @@
                                                    {:date      (tick/date "2021-08-01")
                                                     :recipient "Recipient 3"
                                                     :amount    200}]
-                                                  #time/month "AUGUST"))))))
+                                                  #time/month "AUGUST")))))

@@ -2,7 +2,7 @@
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+            :url  "http://www.eclipse.org/legal/epl-v10.html"}
 
   :min-lein-version "2.7.1"
 
@@ -15,13 +15,13 @@
   :source-paths ["src"]
 
   :aliases {"fig"       ["trampoline" "run" "-m" "figwheel.main"]
-            "fig:dev" ["trampoline" "run" "-m" "figwheel.main" "-b" "finances" "-r"]
+            "fig:dev"   ["trampoline" "run" "-m" "figwheel.main" "-b" "finances" "-r"]
             "fig:test"  ["run" "-m" "figwheel.main" "-co" "test.cljs.edn" "-m" "finances.test-runner"]
-            "fig:build"   ["run" "-m" "figwheel.main" "-O" "advanced" "-bo" "finances"]}
+            "fig:build" ["run" "-m" "figwheel.main" "-O" "advanced" "-bo" "finances"]}
 
-  :profiles {:dev {:dependencies [[com.bhauman/figwheel-main "0.2.12"]
-                                  [com.bhauman/rebel-readline-cljs "0.1.4"]]
-                   
+  :profiles {:dev {:dependencies   [[com.bhauman/figwheel-main "0.2.12"]
+                                    [com.bhauman/rebel-readline-cljs "0.1.4"]]
+
                    :resource-paths ["target"]
-                   :clean-targets ^{:protect false} ["target" "resources/public/cljs-out"]}})
+                   :clean-targets  ^{:protect false} ["target" "resources/public/cljs-out"]}})
 

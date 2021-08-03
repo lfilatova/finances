@@ -15,7 +15,7 @@
            (utils/format-amount 200)))))
 
 (deftest amount-valid?
-  (testing "Check amount format is '0.00'"
+  (testing "Check amount format"
     (is (= true
            (utils/amount-valid? "0.01")))
     (is (= false

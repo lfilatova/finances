@@ -3,7 +3,7 @@
     [tick.alpha.api :as tick]))
 
 ; State has predefined data to demonstrate several columns in the column chart (column per month)
-; In any other cases state should be empty or loaded from persisted store.
+; In any other cases state should be empty or loaded from persisted storage.
 (defonce *state (atom [{:date (tick/date "2021-05-05") :recipient "Recipient 1" :amount 90}
                        {:date (tick/date "2021-05-15") :recipient "Recipient 2" :amount 130}
                        {:date (tick/date "2021-05-25") :recipient "Recipient 3" :amount 25}
